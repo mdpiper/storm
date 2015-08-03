@@ -423,7 +423,7 @@ Get_value_ptr (void *self, const char *name, void **dest)
   void *src = NULL;
 
   if (strcmp (name, "model_grid_cell__row_index") == 0) {
-    src = &((StormModel *) self)->center[1];
+    src = &((StormModel *) self)->center[0];
   } else if (strcmp (name, "model_grid_cell__column_index") == 0) {
     src = &((StormModel *) self)->center[1];
   } else if (strcmp (name, "cyclone__magnitude_of_velocity") == 0) {
